@@ -1,0 +1,29 @@
+.home {
+    height: 60svh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.logo {
+    height: 140px;
+    width: auto;
+}
+
+.home-bglight-1 {
+    background-color: #b2bbc5;
+    width: 600px;
+    height: 100px;
+    border-radius: 100%;
+    position: absolute;
+    rotate: -30deg;
+    z-index: -1;
+    filter: blur(40px);
+    left: 320px;
+}
+
+.product-list {
+    display: flex;
+    justify-content: center;
+}
