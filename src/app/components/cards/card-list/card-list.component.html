@@ -1,0 +1,5 @@
+<div class="card-list">
+    @for (p of data; track p.id) {
+        <app-card [productName]="p.productName"></app-card>
+    }
+</div>
