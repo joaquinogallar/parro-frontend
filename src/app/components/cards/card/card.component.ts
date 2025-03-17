@@ -1,10 +1,12 @@
 import { Component, Input, OnInit } from '@angular/core';
 import { ProductService } from '../../../services/product.service';
+import { AddToCartComponent } from '../../buttons/add-to-cart/add-to-cart.component';
 
 @Component({
     selector: 'app-card',
     templateUrl: 'card.component.html',
-    styleUrl: 'card.component.css'
+    styleUrl: 'card.component.css',
+    imports: [AddToCartComponent]
 })
 
 export class CardComponent implements OnInit {
