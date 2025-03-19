@@ -14,6 +14,10 @@ export class CardListComponent implements OnInit {
 
     constructor(private productService: ProductService) { }
 
+    test(id: string) {
+        console.log(id);
+    }
+
     ngOnInit():void {
         this.productService.getAllProduct().subscribe((res) => {
             this.data = res

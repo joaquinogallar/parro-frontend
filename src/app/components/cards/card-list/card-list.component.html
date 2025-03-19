@@ -1,5 +1,13 @@
 <div class="card-list">
-    @for (p of data; track p.id) {
-        <app-card [productName]="p.productName"></app-card>
+    @defer {
+        @for (p of data; track p.id) {
+            @if (p.stock > 0) {
+                <app-card (click)="test(p.id)" [productName]="p.productName" [description]="p.description" [color]="p.color" [price]="p.price" [size]="p.size" [stock]="p.stock"></app-card>
+            }
+        }
+    } @placeholder {
+        <p>There are no products</p>
+    } @loading (minimum 500ms) {
+        <p>Loading...</p>
     }
 </div>
