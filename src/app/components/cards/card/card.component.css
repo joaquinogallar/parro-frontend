@@ -11,7 +11,7 @@
 .card-image {
     position: relative;
 }
-
+/* 
 .card-image:hover::after {
     transition: all 1s ease-in-out;
     content: "Ver Producto";
@@ -28,7 +28,7 @@
     display: flex; 
     justify-content: center; 
     align-items: center;
-}
+} */
 
 .card-image img {
     width: 100%;

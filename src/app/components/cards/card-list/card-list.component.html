@@ -2,7 +2,15 @@
     @defer {
         @for (p of data; track p.id) {
             @if (p.stock > 0) {
-                <app-card (click)="test(p.id)" [productName]="p.productName" [description]="p.description" [color]="p.color" [price]="p.price" [size]="p.size" [stock]="p.stock"></app-card>
+                <app-card 
+                (handleImageClick)="onImageClick($event)" 
+                [id]="p.id"
+                [productName]="p.productName" 
+                [description]="p.description" 
+                [color]="p.color" 
+                [price]="p.price" 
+                [size]="p.size" 
+                [stock]="p.stock" />
             }
         }
     } @placeholder {
