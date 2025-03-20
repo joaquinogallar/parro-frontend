@@ -1,6 +1,9 @@
 <div class="card">
     <div class="card-image">
       <img (click)="[onImageClick()]" [src]="imageUrl" alt="{{ productName }}" />
+      <div class="overlay">
+        <span class="overlay-text">Ver Producto</span>
+    </div>
     </div>
   
     <div class="card-content">
