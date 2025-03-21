@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { ProductService } from '../../../services/product.service';
 import { CardComponent } from '../card/card.component';
 import { Router } from '@angular/router';
+import { Product } from '../../../models/product.moduel';
 
 @Component({
     selector: 'app-card-list',
@@ -11,7 +12,7 @@ import { Router } from '@angular/router';
 })
 
 export class CardListComponent implements OnInit {
-    data: any[] = []
+    data: Product[] = []
 
     constructor(
         private productService: ProductService,
